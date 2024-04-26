@@ -1,0 +1,12 @@
+1-"DefaultController" isimli bir controller oluşturduk.
+2-DefaultController üzerinden yeni bir View oluşturduk. Adımları şu şekildedir;
+a)View'a sağ tıkladık ve "Add View" seçeneğine tıkladık.
+b)Razor View'ı seçtik ve Add tuşuna bastık.
+c)Karşımıza gelen pencereden alt kısımda bulunan Options bölümünden seçili olan kutucukları kaldırıyoruz.
+d)Bütün her şeyi yaptıktan sonra Add tuşuna basıyoruz ve View'ı başarıyla oluşturmuş oluyoruz.
+3-İnternetten indirdiğimiz "hola-master" şablonunu wwwroot klasörünün içerisine atıyoruz.
+4-hola-master şablonu içerisindeki "Index.cshtml" kodlarını kopyalıyoruz ve daha önceden oluşturduğumuz
+View'ın içerisine yapıştırıyoruz.
+
+**Kullandığımız şablon "One-Page" türünde bir şablon olduğu için şablonu parçalara bölerek yönetmek daha
+kolay olacaktır. Bu yüzden sonraki bölümde ViewComponent kullanacağız.

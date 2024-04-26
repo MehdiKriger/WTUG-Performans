@@ -1,0 +1,18 @@
+1-MyPortfolyo isminde bir proje oluşturduk.
+2-Solution Explorer'ın içine"DAL(Data Access Layer)" isimli bir klasör oluşturduk.
+3-DAL klasörünün içine "Entities" isimli bir klasör oluşturduk.
+4-Entities klasörünün içerisine "About,Contact,Experience,Feature,Message,
+Portfolio,Skill,SocialMedia ve Testimonial" isimli sınıflar oluşturduk.
+5-Her sınıfın içerisine girip bir model oluşturduk.
+6-Projemize yeni NuGet paketleri ekledik.
+*EntityFrameWorkCore
+*EntityFrameWorkCore.Design
+*EntityFrameWorkCore.SqlServer
+*EntityFrameWorkCore.Tools
+7-DAL klasörünün içerisine yeni bir klasör açtık ve ismini "Context" olarak değiştirdik.
+8-Context klasörünün içerisine yeni bir sınıf açtık ve ismini "MyPortfolioContext" yaptık.
+9-Oluşturduğumuz sınıfın içerisine girip indirdiğimiz NuGet paketlerinden faydalanarak Veritabanı ile
+projemizi entegre ettik.
+10-Paket Yönetici Konsolunu(Package Manager Console) açtık ve sırasıyla "add-migration mig1 ve update-database"
+komutlarını yazdık. Bunun sonucunda yeni bir veritabanı oluşturmuş olduk. Oluşturduğumuz veritabanını kontrol etmek
+için SQL Server Managment Studio'yu açıyoruz ve "MyPortfolioDb" isimli bir database olup olmadığını kontrol ediyoruz.

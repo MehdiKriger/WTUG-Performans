@@ -1,0 +1,19 @@
+1-Solution Explorer sekmesinden "ViewComponents" isimli bir klasör açtık.
+2-Açılan klasörün içerisine head bölümü için "_HeadComponentPartial" isimli bir sınıf ekledik.
+3-_HeadComponentPartial sınıfının içerisine kodlarımızı yazdıktan sonra Views/Shared 
+içerisine yeni bir klasör ekliyoruz. Eklediğimiz klasörün ismini "Components" yapıyoruz.
+4-Components klasörünün içerisine "_HeadComponentPartial" isimli bir klasör daha açıyoruz ve yeni bir
+View ekliyoruz. Adımları şu şekildedir;
+a)_HeadComponentPartial klasörüne sağ tıkladık ve Add View seçeneğine tıkladık.
+b)Karşımıza çıkan pencereden RazorView'i seçtik ve add tuşuna bastık.
+c)Karşımıza tekrardan yeni bir pencere çıkacaktır bu yeni pencerede en altta bulunun Options bölümünden
+"Create as a partial view" seçeneğini işaretliyoruz ve oluşturacağımız View'ın ismini "Default" olarak belirliyoruz.
+İsmini yazdıktan sonra add tuşuna basıyoruz ve View başarıyla eklenmiş oluyor.
+5-Daha önceden eklemiş olduğumuz Views/Default/Index.cshtml dosyasının içerisindeki head bölümünü kesiyoruz
+ve yeni oluşturduğumuz View'ın içerisine yapıştırıyoruz.
+6-İlk oluşturduğumuz View dosyasının head bölümü boş kalacaktır. Boş bıraktığımız kısıma oranın bir Partial
+olduğunu belirtmemiz gerekir. Bunuda şu kod ile beraber sağlayabiliriz:
+@await Component.InvokeAsync("_HeadComponentPartial")
+7-Şu ana kadar yaptıklarımızın aynısını "About,Contact,Experience,Feature,Footer,Navbar,Portfolio,
+Skill,Statistic ve Testimonial" bölümleri içinde yapıyoruz.
+8-Hepsini yaptıktan sonra DB'den veriler çekeceğiz ve sitemizin son dokunuşlarını yapacağız.
